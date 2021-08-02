@@ -1,0 +1,82 @@
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.main-firstColumn{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/josecaicedo/image/upload/v1626305506/pizza/imagebkg_ntmflj.png');
+}
+
+.firstColumn__img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.main-secondColumn{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 15px;
+  margin: 3rem 0;
+  padding: 2rem;
+}
+.secondColumn__title{
+  font-size:1.1em;
+}
+.secondColumn__subtitle{
+  font-size:1em;
+}
+.secondColumn__img{
+  width: 14em;
+}
+
+.secondColumn__Form{
+  width: 60%;
+}
+.form__label{
+  display: flex;
+  border: 1px solid gray;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.form__input{
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.form__img{
+  width: 1.5rem;
+}
+
+.form__button{
+  background: #fac545;
+  border: none;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 6px 6px 5px #98a6a7;
+}
+.form__resetPassword{
+  font-size: 1.1rem;
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    margin: 1rem;
+}
