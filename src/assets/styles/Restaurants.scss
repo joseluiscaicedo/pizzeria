@@ -1,0 +1,127 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.restaurants{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  text-align: center;
+  height: 100%;
+}
+
+.restaurants__FirstColumn{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/josecaicedo/image/upload/v1626305506/pizza/imagebkg_ntmflj.png');
+}
+
+.firstColumn__imgPizzaIcon{
+  width: 8%;
+  height: 8%;
+  object-fit: contain;
+  position: absolute;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.firstColumn__imgPizzaImg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.restaurants__SecondColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.SecondColumn__header{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.header__img{
+  height: 1rem;
+}
+
+.header__category{
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.header__category:after{
+  content: "";
+  display: block;
+  width: 77.6px;
+  border-top: 3px solid orange;
+}
+.header__return{
+text-align: right;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-top: 2rem;
+text-decoration: none;
+}
+
+.SecondColumn__main{
+  text-align: left;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+.main__Title{
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+
+.main__SubTitle{
+  margin: 0;
+}
+
+.main__search{
+  display: flex;
+  border: 1px solid gray;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 1rem 1rem 2rem 0;
+  width: 70%;
+}
+
+.SecondColumn__footer{
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5rem;
+  height: 60px;
+}
+
+.footer__SocialMedia{
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.SocialMedia__facebook{
+  width: 100%;
+  height: 100%;
+}
+
+.SocialMedia__instagram{
+  width: 70%;
+  height: 80%;
+}
+
+.footer__logoWhitePizza{
+  height: 60%;
+}
