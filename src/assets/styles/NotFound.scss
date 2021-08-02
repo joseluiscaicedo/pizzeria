@@ -1,0 +1,47 @@
+@import "./Vars.scss";
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+.notFound {
+  display: grid;
+  grid-gap: 1rem;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 2rem;
+  background-color: $second-color;
+  font-family: 'Press Start 2P', Arial;
+}
+
+.imgContainer__img{
+  object-fit: contain;
+  width: 100%;
+}
+
+.notFound__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
+  color: $third-color;
+  height: 50vh;
+}
+
+.container__h1 {
+  font-size: 5rem;
+  color:$danger-color;
+}
+
+.container__h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.container__anchor {
+  text-decoration: none;
+  margin-right: 20px;
+  color: inherit;
+}
+
+.container__anchor:hover {
+  color: $danger-color;
+  transition: 2s;
+}
