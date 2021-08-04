@@ -13,9 +13,11 @@ const filterTerm = ({ searchRestaurants }) => (event) => {
   if (event.name.toLowerCase().includes(searchRestaurants.toLowerCase())) {
     return event;
   }
+
 };
 
-const mapRestaurant = ({ RestaurantItem }) => ({ id, ...props }) => <RestaurantItem key={id} {...props} />;
+const mapRestaurant = ({ RestaurantItem }) => ({ id, ...props }) =>
+  <RestaurantItem key={id} {...props} id={id} />;
 
 const Restaurants = ({ store }) => {
   const [searchRestaurants, setSearchRestaurants] = useState('');
@@ -36,14 +38,16 @@ const Restaurants = ({ store }) => {
         </div>
         <div className='SecondColumn__main'>
           <h1 className='main__Title'>Tiendas</h1>
-          <h3 className='main__SubTitle'>Escoge tu pizzería favorita</h3>
+            <label aria-labelledby='searchInput'
+            ><h2 className='main__SubTitle'>Escoge tu pizzería favorita</h2>
             <input
             className='main__search'
             type='text'
             id='searchInput'
             placeholder='Buscar...'
-              onChange={SearchTerm({ setSearchRestaurants })}
+            onChange={SearchTerm({ setSearchRestaurants })}
             />
+            </label>
           <section className='restaurants'>
             {store.filter(filterTerm({ searchRestaurants })).map(mapRestaurant({ RestaurantItem }))}
           </section>
